@@ -112,7 +112,7 @@ const Index = () => {
             </div>
 
             <img
-              src="/images/drive-mockup.png"
+              src="/images/drive-mockup.png?v=2"
               alt="Preview do Drive com materiais TJSP"
               className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 w-[280px] h-auto object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.25)] z-10 pointer-events-none"
               width={280}
