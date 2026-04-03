@@ -290,6 +290,15 @@ const Index = () => {
 
       {/* Rodapé */}
       <footer className="py-12 border-t border-border text-center text-muted-foreground text-xs px-4">
+        <div className="flex justify-center mb-6">
+          <img
+            src="/images/logo-tjsp.png"
+            alt="Logo TJSP Escrevente"
+            className="h-20 md:h-24 w-auto"
+            width={200}
+            height={96}
+          />
+        </div>
         <p className="mb-4">© 2026 - Guia de Aprovação Escrevente TJSP. Todos os direitos reservados.</p>
         <p className="max-w-2xl mx-auto leading-relaxed">
           Este produto não garante a aprovação no concurso. O resultado depende exclusivamente do empenho e dedicação do estudante. Não temos vínculo direto com o Tribunal de Justiça de São Paulo.
