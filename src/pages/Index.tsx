@@ -103,21 +103,30 @@ const Index = () => {
             <p className="text-muted-foreground">Tudo organizado em um único drive focado no concurso de Escrevente do TJSP 2026.</p>
           </div>
 
-          {/* 3 tópicos + mockup lado a lado */}
-          <div className="grid md:grid-cols-2 gap-10 items-center mb-10">
-            <div className="space-y-4">
+          {/* 3 tópicos + mockup flutuante */}
+          <div className="relative mb-10">
+            <div className="md:w-[55%] space-y-4">
               <FeatureCard icon={FileText} title="Apostilas completas por matéria" description="Conteúdo separado conforme o edital, com cada disciplina organizada para facilitar seu estudo." />
               <FeatureCard icon={Calendar} title="Cronograma + edital verticalizado" description="Plano de estudo pronto para seguir. Você não precisa pensar, apenas executar." />
               <FeatureCard icon={Brain} title="Mapas mentais" description="Resumos visuais que facilitam a memorização e aceleram suas revisões." />
             </div>
 
-            <div className="flex justify-center items-center">
+            <img
+              src="/images/drive-mockup.png"
+              alt="Preview do Drive com materiais TJSP"
+              className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 w-[280px] h-auto object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.25)] z-10 pointer-events-none"
+              width={280}
+              height={560}
+            />
+
+            {/* Mobile: show below */}
+            <div className="flex justify-center mt-8 md:hidden">
               <img
                 src="/images/drive-mockup.png"
                 alt="Preview do Drive com materiais TJSP"
-                className="max-w-[280px] md:max-w-[320px] w-full h-auto drop-shadow-[0_0_40px_hsl(var(--primary)/0.3)] object-contain"
-                width={320}
-                height={600}
+                className="w-[220px] h-auto object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.25)]"
+                width={220}
+                height={440}
               />
             </div>
           </div>
