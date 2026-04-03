@@ -116,6 +116,16 @@ const Index = () => {
               <p className="text-muted-foreground">Após a confirmação do pagamento, você recebe os dados de acesso no seu e-mail instantaneamente.</p>
             </div>
           </div>
+
+          <div className="mt-16 flex justify-center">
+            <img
+              src="/images/drive-mockup.png"
+              alt="Preview do Drive com materiais TJSP"
+              className="max-w-sm md:max-w-md lg:max-w-lg w-full h-auto drop-shadow-[0_0_40px_hsl(var(--primary)/0.3)] rounded-2xl"
+              width={600}
+              height={600}
+            />
+          </div>
         </div>
       </section>
 
