@@ -57,7 +57,7 @@ const Index = () => {
             width={1920}
             height={1080}
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/60 to-background" />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/10 via-background/40 to-background" />
         </div>
 
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-primary/10 blur-[150px] rounded-full -z-10" />
