@@ -116,6 +116,16 @@ const Index = () => {
               <p className="text-muted-foreground">Após a confirmação do pagamento, você recebe os dados de acesso no seu e-mail instantaneamente.</p>
             </div>
           </div>
+
+          <div className="mt-16 flex justify-center">
+            <img
+              src="/images/drive-mockup.png"
+              alt="Preview do Drive com materiais TJSP"
+              className="max-w-sm md:max-w-md lg:max-w-lg w-full h-auto drop-shadow-[0_0_40px_hsl(var(--primary)/0.3)] rounded-2xl"
+              width={600}
+              height={600}
+            />
+          </div>
         </div>
       </section>
 
@@ -280,6 +290,15 @@ const Index = () => {
 
       {/* Rodapé */}
       <footer className="py-12 border-t border-border text-center text-muted-foreground text-xs px-4">
+        <div className="flex justify-center mb-6">
+          <img
+            src="/images/logo-tjsp.png"
+            alt="Logo TJSP Escrevente"
+            className="h-20 md:h-24 w-auto"
+            width={200}
+            height={96}
+          />
+        </div>
         <p className="mb-4">© 2026 - Guia de Aprovação Escrevente TJSP. Todos os direitos reservados.</p>
         <p className="max-w-2xl mx-auto leading-relaxed">
           Este produto não garante a aprovação no concurso. O resultado depende exclusivamente do empenho e dedicação do estudante. Não temos vínculo direto com o Tribunal de Justiça de São Paulo.
