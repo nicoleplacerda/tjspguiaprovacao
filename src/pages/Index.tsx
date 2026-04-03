@@ -122,7 +122,7 @@ const Index = () => {
             {/* Mobile: show below */}
             <div className="flex justify-center mt-8 md:hidden">
               <img
-                src="/images/drive-mockup.png"
+                src="/images/drive-mockup.png?v=2"
                 alt="Preview do Drive com materiais TJSP"
                 className="w-[220px] h-auto object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.25)]"
                 width={220}
