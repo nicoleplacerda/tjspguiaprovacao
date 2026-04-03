@@ -103,29 +103,34 @@ const Index = () => {
             <p className="text-muted-foreground">Tudo organizado em um único drive focado no concurso de Escrevente do TJSP 2026.</p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-10 items-center">
+          {/* 3 tópicos + mockup lado a lado */}
+          <div className="grid md:grid-cols-2 gap-10 items-center mb-10">
             <div className="space-y-4">
               <FeatureCard icon={FileText} title="Apostilas completas por matéria" description="Conteúdo separado conforme o edital, com cada disciplina organizada para facilitar seu estudo." />
               <FeatureCard icon={Calendar} title="Cronograma + edital verticalizado" description="Plano de estudo pronto para seguir. Você não precisa pensar, apenas executar." />
               <FeatureCard icon={Brain} title="Mapas mentais" description="Resumos visuais que facilitam a memorização e aceleram suas revisões." />
-              <FeatureCard icon={Target} title="+ de 3.000 questões do TJSP" description="Treine com questões reais da banca e entenda como a prova funciona na prática." />
-              <FeatureCard icon={Layout} title="Simulados completos" description="Teste seu desempenho e se prepare para o dia da prova." />
-              <FeatureCard icon={BookOpen} title="Estrutura de redação" description="Modelo pronto para você não travar e conseguir desenvolver uma boa redação." />
-              <FeatureCard icon={ShieldCheck} title="Vade Mecum direcionado" description="Conteúdo focado no que realmente importa para a prova, sem excesso desnecessário." />
-              <div className="bg-gradient-to-r from-primary/20 to-card border border-primary/30 p-8 rounded-2xl flex flex-col justify-center">
-                <h3 className="text-2xl font-bold mb-2 text-foreground">Acesso Imediato ao Drive</h3>
-                <p className="text-muted-foreground">Após a confirmação do pagamento, você recebe os dados de acesso no seu e-mail instantaneamente.</p>
-              </div>
             </div>
 
-            <div className="flex justify-center">
+            <div className="flex justify-center items-center">
               <img
                 src="/images/drive-mockup.png"
                 alt="Preview do Drive com materiais TJSP"
-                className="max-w-xs md:max-w-sm w-full h-auto drop-shadow-[0_0_40px_hsl(var(--primary)/0.3)]"
-                width={400}
-                height={700}
+                className="max-w-[280px] md:max-w-[320px] w-full h-auto drop-shadow-[0_0_40px_hsl(var(--primary)/0.3)] object-contain"
+                width={320}
+                height={600}
               />
+            </div>
+          </div>
+
+          {/* Restante dos tópicos */}
+          <div className="grid md:grid-cols-2 gap-4">
+            <FeatureCard icon={Target} title="+ de 3.000 questões do TJSP" description="Treine com questões reais da banca e entenda como a prova funciona na prática." />
+            <FeatureCard icon={Layout} title="Simulados completos" description="Teste seu desempenho e se prepare para o dia da prova." />
+            <FeatureCard icon={BookOpen} title="Estrutura de redação" description="Modelo pronto para você não travar e conseguir desenvolver uma boa redação." />
+            <FeatureCard icon={ShieldCheck} title="Vade Mecum direcionado" description="Conteúdo focado no que realmente importa para a prova, sem excesso desnecessário." />
+            <div className="md:col-span-2 bg-gradient-to-r from-primary/20 to-card border border-primary/30 p-8 rounded-2xl flex flex-col justify-center">
+              <h3 className="text-2xl font-bold mb-2 text-foreground">Acesso Imediato ao Drive</h3>
+              <p className="text-muted-foreground">Após a confirmação do pagamento, você recebe os dados de acesso no seu e-mail instantaneamente.</p>
             </div>
           </div>
         </div>
