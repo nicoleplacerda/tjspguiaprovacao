@@ -15,6 +15,7 @@ import {
   BookOpen
 } from 'lucide-react';
 import FeatureCard from '@/components/FeatureCard';
+import TestimonialCard from '@/components/TestimonialCard';
 
 const CHECKOUT_URL = "https://pay.kirvano.com/d2cd80eb-7fca-4fc1-8513-2232d2f34e98";
 
