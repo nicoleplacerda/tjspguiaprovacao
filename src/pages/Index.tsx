@@ -53,7 +53,7 @@ const Index = () => {
           <img
             src="/images/hero-bg.jpg"
             alt="Fundo TJSP"
-            className="w-full h-full object-cover opacity-40 brightness-[0.6] contrast-[1.2]"
+            className="w-full h-full object-cover opacity-80 brightness-[0.6] contrast-[1.2]"
             width={1920}
             height={1080}
           />
