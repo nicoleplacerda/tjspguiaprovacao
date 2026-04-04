@@ -191,6 +191,37 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Depoimentos */}
+      <section className="py-24 px-4 bg-background">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-foreground">
+            💬 O que dizem nossos alunos
+          </h2>
+          <p className="text-muted-foreground text-center mb-12">Veja como o material ajudou outras pessoas a se organizarem para o TJSP.</p>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            <TestimonialCard
+              photo="/images/depoimento-1.jpg"
+              name="Camila Rodrigues"
+              role="Aprovada no TJSP 2025"
+              text="Eu estava completamente perdida antes de encontrar esse material. O cronograma e as apostilas me deram direção. Consegui organizar meus estudos e fui aprovada!"
+            />
+            <TestimonialCard
+              photo="/images/depoimento-2.jpg"
+              name="Rafael Souza"
+              role="Estudante para o TJSP 2026"
+              text="Já gastei mais de R$800 em cursos e não conseguia manter uma rotina. Com esse drive, em uma semana eu já estava rendendo mais do que em meses."
+            />
+            <TestimonialCard
+              photo="/images/depoimento-3.jpg"
+              name="Juliana Mendes"
+              role="Aprovada no TJSP 2025"
+              text="Os mapas mentais e o banco de questões fizeram toda a diferença. Material direto ao ponto, sem enrolação. Super recomendo!"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Comparação de Preços */}
       <section className="py-24 px-4 border-t border-border" id="oferta">
         <div className="max-w-3xl mx-auto text-center">
