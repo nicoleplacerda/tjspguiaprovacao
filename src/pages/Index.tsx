@@ -35,16 +35,14 @@ const BonusCard = ({ title, description, oldPrice }: { title: string; descriptio
   </div>
 );
 
-const TestimonialCard = ({ name, role, text }: { name: string; role: string; text: string }) => (
+const TestimonialCard = ({ name, role, text, photo }: { name: string; role: string; text: string; photo: string }) => (
   <div className="bg-zinc-900 border border-zinc-800 p-8 rounded-3xl relative h-full flex flex-col">
     <div className="flex gap-1 mb-6">
       {[...Array(5)].map((_, i) => <Star key={i} size={16} className="fill-yellow-400 text-yellow-400" />)}
     </div>
     <p className="text-zinc-300 text-base mb-8 italic leading-relaxed flex-1">"{text}"</p>
     <div className="flex items-center gap-4 border-t border-zinc-800 pt-6">
-      <div className="w-12 h-12 rounded-full bg-red-600/20 flex items-center justify-center text-red-500 font-bold text-sm uppercase">
-        {name.charAt(0)}
-      </div>
+      <img src={photo} alt={name} className="w-12 h-12 rounded-full object-cover border-2 border-red-600/30" width={48} height={48} loading="lazy" />
       <div>
         <h4 className="text-white font-bold text-base">{name}</h4>
         <p className="text-zinc-500 text-xs uppercase tracking-widest font-bold">{role}</p>
@@ -84,10 +82,10 @@ const Index = () => {
   const CHECKOUT_URL = "https://pay.kirvano.com/d2cd80eb-7fca-4fc1-8513-2232d2f34e98";
   
   const materialImages = [
-    "/images/drive-mockup.png",
-    "/images/drive-mockup.png",
-    "/images/drive-mockup.png",
-    "/images/drive-mockup.png"
+    "/images/material-1.png",
+    "/images/material-2.png",
+    "/images/material-3.png",
+    "/images/material-4.png"
   ];
 
   const subjects = [
@@ -161,7 +159,7 @@ const Index = () => {
 
           <div className="w-full max-w-4xl mb-12 transform hover:scale-[1.01] transition-transform duration-700">
             <img 
-              src="/images/drive-mockup.png" 
+              src="/images/drive-mockup-new.png" 
               alt="Mockup do Drive TJSP" 
               className="w-full h-auto drop-shadow-[0_20px_60px_rgba(220,38,38,0.3)]"
             />
@@ -189,7 +187,7 @@ const Index = () => {
       <section className="py-24 px-4 bg-zinc-950">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-2xl md:text-3xl font-bold mb-8 text-white uppercase italic tracking-tighter opacity-80 max-w-2xl mx-auto leading-snug">
+            <h2 className="text-3xl md:text-5xl font-black mb-8 text-white uppercase italic tracking-tighter max-w-3xl mx-auto leading-snug">
               Você não precisa gastar centenas (ou até milhares) em cursos
             </h2>
             <p className="text-lg md:text-xl text-zinc-400 max-w-3xl mx-auto leading-relaxed mb-16">
@@ -199,9 +197,9 @@ const Index = () => {
             
             <div className="flex flex-col items-center mb-24">
                 <div className="h-px w-16 bg-red-600/50 mb-8 mx-auto"></div>
-                <h3 className="text-3xl md:text-5xl font-black text-white tracking-tighter text-center max-w-3xl leading-tight">
+                <h3 className="text-2xl md:text-3xl font-bold text-white tracking-tighter text-center max-w-3xl leading-tight">
                    👉 O problema não é falta de material. <br className="hidden md:block" />
-                   <span className="text-red-600 font-black italic">É falta de organização e direção.</span>
+                   <span className="text-red-600 font-bold italic">É falta de organização e direção.</span>
                 </h3>
                 <div className="h-px w-16 bg-red-600/50 mt-8 mx-auto"></div>
             </div>
@@ -375,9 +373,9 @@ const Index = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <TestimonialCard name="Camila Rodrigues" role="Aprovada TJSP" text="O cronograma me deu a direção que faltava. Estava muito perdida e agora sinto que domino o edital." />
-            <TestimonialCard name="Rafael Souza" role="Aluno TJSP 2026" text="Este drive é cirúrgico. Sem enrolação, material direto e muito bem organizado. Vale cada centavo." />
-            <TestimonialCard name="Juliana Mendes" role="Aprovada TJSP" text="Mapas mentais nota 10! Facilitou muito a minha revisão final. Recomendo para quem quer passar logo." />
+            <TestimonialCard name="Camila Rodrigues" role="Aprovada TJSP" text="O cronograma me deu a direção que faltava. Estava muito perdida e agora sinto que domino o edital." photo="/images/depoimento-camila.jpg" />
+            <TestimonialCard name="Rafael Souza" role="Aluno TJSP 2026" text="Este drive é cirúrgico. Sem enrolação, material direto e muito bem organizado. Vale cada centavo." photo="/images/depoimento-rafael.jpg" />
+            <TestimonialCard name="Juliana Mendes" role="Aprovada TJSP" text="Mapas mentais nota 10! Facilitou muito a minha revisão final. Recomendo para quem quer passar logo." photo="/images/depoimento-juliana.jpg" />
           </div>
         </div>
       </section>
