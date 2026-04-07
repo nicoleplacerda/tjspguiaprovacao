@@ -140,8 +140,8 @@ const Index = () => {
       {/* Hero Section */}
       <header className="relative pt-12 pb-24 px-4 min-h-screen flex flex-col items-center justify-center">
         <div className="absolute inset-0 z-0">
-          <img src="/images/hero-bg.jpg" alt="Fundo TJSP" className="w-full h-full object-cover opacity-40 grayscale-[20%] brightness-[0.3]" />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/0 via-black/40 to-black"></div>
+          <img src="/images/hero-bg.jpg" alt="Fundo TJSP" className="w-full h-full object-cover opacity-70 grayscale-[10%] brightness-[0.45] contrast-[1.1]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/0 via-black/20 to-black"></div>
         </div>
         
         <div className="max-w-5xl mx-auto text-center relative z-10 flex flex-col items-center">
