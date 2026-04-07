@@ -35,16 +35,14 @@ const BonusCard = ({ title, description, oldPrice }: { title: string; descriptio
   </div>
 );
 
-const TestimonialCard = ({ name, role, text }: { name: string; role: string; text: string }) => (
+const TestimonialCard = ({ name, role, text, photo }: { name: string; role: string; text: string; photo: string }) => (
   <div className="bg-zinc-900 border border-zinc-800 p-8 rounded-3xl relative h-full flex flex-col">
     <div className="flex gap-1 mb-6">
       {[...Array(5)].map((_, i) => <Star key={i} size={16} className="fill-yellow-400 text-yellow-400" />)}
     </div>
     <p className="text-zinc-300 text-base mb-8 italic leading-relaxed flex-1">"{text}"</p>
     <div className="flex items-center gap-4 border-t border-zinc-800 pt-6">
-      <div className="w-12 h-12 rounded-full bg-red-600/20 flex items-center justify-center text-red-500 font-bold text-sm uppercase">
-        {name.charAt(0)}
-      </div>
+      <img src={photo} alt={name} className="w-12 h-12 rounded-full object-cover border-2 border-red-600/30" width={48} height={48} loading="lazy" />
       <div>
         <h4 className="text-white font-bold text-base">{name}</h4>
         <p className="text-zinc-500 text-xs uppercase tracking-widest font-bold">{role}</p>
