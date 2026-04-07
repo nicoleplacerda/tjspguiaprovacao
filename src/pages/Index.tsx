@@ -373,9 +373,9 @@ const Index = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <TestimonialCard name="Camila Rodrigues" role="Aprovada TJSP" text="O cronograma me deu a direção que faltava. Estava muito perdida e agora sinto que domino o edital." />
-            <TestimonialCard name="Rafael Souza" role="Aluno TJSP 2026" text="Este drive é cirúrgico. Sem enrolação, material direto e muito bem organizado. Vale cada centavo." />
-            <TestimonialCard name="Juliana Mendes" role="Aprovada TJSP" text="Mapas mentais nota 10! Facilitou muito a minha revisão final. Recomendo para quem quer passar logo." />
+            <TestimonialCard name="Camila Rodrigues" role="Aprovada TJSP" text="O cronograma me deu a direção que faltava. Estava muito perdida e agora sinto que domino o edital." photo="/images/depoimento-camila.jpg" />
+            <TestimonialCard name="Rafael Souza" role="Aluno TJSP 2026" text="Este drive é cirúrgico. Sem enrolação, material direto e muito bem organizado. Vale cada centavo." photo="/images/depoimento-rafael.jpg" />
+            <TestimonialCard name="Juliana Mendes" role="Aprovada TJSP" text="Mapas mentais nota 10! Facilitou muito a minha revisão final. Recomendo para quem quer passar logo." photo="/images/depoimento-juliana.jpg" />
           </div>
         </div>
       </section>
