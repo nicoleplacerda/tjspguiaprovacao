@@ -82,10 +82,10 @@ const Index = () => {
   const CHECKOUT_URL = "https://pay.kirvano.com/d2cd80eb-7fca-4fc1-8513-2232d2f34e98";
   
   const materialImages = [
-    "/images/drive-mockup.png",
-    "/images/drive-mockup.png",
-    "/images/drive-mockup.png",
-    "/images/drive-mockup.png"
+    "/images/material-1.png",
+    "/images/material-2.png",
+    "/images/material-3.png",
+    "/images/material-4.png"
   ];
 
   const subjects = [
