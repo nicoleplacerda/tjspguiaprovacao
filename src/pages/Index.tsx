@@ -187,7 +187,7 @@ const Index = () => {
       <section className="py-24 px-4 bg-zinc-950">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-2xl md:text-3xl font-bold mb-8 text-white uppercase italic tracking-tighter opacity-80 max-w-2xl mx-auto leading-snug">
+            <h2 className="text-3xl md:text-5xl font-black mb-8 text-white uppercase italic tracking-tighter max-w-3xl mx-auto leading-snug">
               Você não precisa gastar centenas (ou até milhares) em cursos
             </h2>
             <p className="text-lg md:text-xl text-zinc-400 max-w-3xl mx-auto leading-relaxed mb-16">
