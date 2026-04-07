@@ -197,9 +197,9 @@ const Index = () => {
             
             <div className="flex flex-col items-center mb-24">
                 <div className="h-px w-16 bg-red-600/50 mb-8 mx-auto"></div>
-                <h3 className="text-3xl md:text-5xl font-black text-white tracking-tighter text-center max-w-3xl leading-tight">
+                <h3 className="text-2xl md:text-3xl font-bold text-white tracking-tighter text-center max-w-3xl leading-tight">
                    👉 O problema não é falta de material. <br className="hidden md:block" />
-                   <span className="text-red-600 font-black italic">É falta de organização e direção.</span>
+                   <span className="text-red-600 font-bold italic">É falta de organização e direção.</span>
                 </h3>
                 <div className="h-px w-16 bg-red-600/50 mt-8 mx-auto"></div>
             </div>
