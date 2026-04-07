@@ -159,7 +159,7 @@ const Index = () => {
 
           <div className="w-full max-w-4xl mb-12 transform hover:scale-[1.01] transition-transform duration-700">
             <img 
-              src="/images/drive-mockup.png" 
+              src="/images/drive-mockup-new.png" 
               alt="Mockup do Drive TJSP" 
               className="w-full h-auto drop-shadow-[0_20px_60px_rgba(220,38,38,0.3)]"
             />
