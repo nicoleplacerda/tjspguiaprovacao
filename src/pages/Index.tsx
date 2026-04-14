@@ -79,7 +79,7 @@ const Index = () => {
   const [openSubject, setOpenSubject] = useState(0);
   const [openFaq, setOpenFaq] = useState(-1);
   
-  const CHECKOUT_URL = "https://pay.kirvano.com/d2cd80eb-7fca-4fc1-8513-2232d2f34e98";
+  const CHECKOUT_URL = "https://pay.kirvano.com/96c46290-1674-4cec-b29e-6c70a6972a20";
   
   const materialImages = [
     "/images/material-1.png",
@@ -168,7 +168,7 @@ const Index = () => {
           <div className="flex flex-col items-center gap-6">
             <div className="bg-white/5 backdrop-blur-md p-8 rounded-[2.5rem] border border-white/10 shadow-2xl flex flex-col items-center">
               <span className="text-zinc-400 uppercase text-[10px] font-black tracking-[0.2em] mb-3">Acesso imediato por apenas</span>
-              <div className="text-6xl md:text-7xl font-black text-yellow-400 tracking-tighter leading-none mb-3">R$ 47,00</div>
+              <div className="text-6xl md:text-7xl font-black text-yellow-400 tracking-tighter leading-none mb-3">R$ 27,00</div>
               <span className="text-zinc-500 text-sm font-bold tracking-wide text-center">Pagamento único, sem mensalidades</span>
             </div>
 
@@ -400,7 +400,7 @@ const Index = () => {
 
             <div className="bg-red-600 p-12 md:p-16">
               <p className="text-white uppercase font-black tracking-[0.3em] mb-4 text-[10px] text-center">OFERTA DE LANÇAMENTO 2026</p>
-              <div className="text-7xl md:text-8xl font-black text-white mb-6 tracking-tighter leading-none text-center">R$ 47,00</div>
+              <div className="text-7xl md:text-8xl font-black text-white mb-6 tracking-tighter leading-none text-center">R$ 27,00</div>
               <p className="text-red-100 font-bold text-xl mb-12 italic opacity-90 text-center">Acesso Imediato. Sem Recorrência.</p>
 
               <button onClick={handleCheckout} className="w-full py-8 bg-white text-red-600 rounded-full font-black text-2xl md:text-3xl hover:bg-zinc-100 transition-all shadow-2xl active:scale-95 uppercase tracking-tighter">
