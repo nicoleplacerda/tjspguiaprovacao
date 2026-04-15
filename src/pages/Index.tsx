@@ -79,7 +79,7 @@ const Index = () => {
   const [openSubject, setOpenSubject] = useState(0);
   const [openFaq, setOpenFaq] = useState(-1);
   
-  const CHECKOUT_URL = "https://pay.kirvano.com/96c46290-1674-4cec-b29e-6c70a6972a20";
+  const CHECKOUT_URL = "https://pay.cakto.com.br/35m64xp_849931";
   
   const materialImages = [
     "/images/material-1.png",
